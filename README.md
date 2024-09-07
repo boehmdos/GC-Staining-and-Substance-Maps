@@ -3,7 +3,31 @@ See your GC data better! Adds color to gas chromatograms according to their mass
 
 To work properly, the script needs the FullColorWheel.png in the same folder and a map of mass spectra (a SOM). An extensive generic one can be downloaded at https://doi.org/10.5281/zenodo.13710838
 
-Gas chromatograms with mass spectra must be saved as text-files from Openchrom - https://www.openchrom.net/ - before they can be processed by the script.
+Gas chromatograms with mass spectra must be saved as text before they can be processed by the script. We use OpenChrom to do this - https://www.openchrom.net/ 
+
+The expected structure of the csv with GC data is:
+
+		RT(milliseconds),RT(minutes),Retention Index (not used),m/z of detected masses (integer)
+
+Labelling the columns explicitly in the header is not required.
+
+For example, the first lines of an GC input might look like this (Openchrom adds the " - NOT USED BY IMPORT", this does not affect the script):
+
+		RT(milliseconds),RT(minutes) - NOT USED BY IMPORT,RI,50,51,52, ... ,448,449,450
+		
+		125508,2.0918,0.0,0.0,0.0,0.0, ... ,0.0,0.0,0.0
+		
+		125787,2.09645,0.0,0.0,36.170532,36.22905, ... ,0.0,0.0,0.0
+		
+		126067,2.1011166666666665,0.0,245.98819,0.0,21.675735, ... ,0.0,0.0,0.0
+  
+  		...
+
+		1080512,18.008533333333332,0.0,0.0,0.0,2.4189453, ... ,0.0,0.0,0.0
+
+
+
+
 
 Version Info
 ------------
