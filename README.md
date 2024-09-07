@@ -1,11 +1,12 @@
-# GC-Staining-and-Substance-Maps
+# GC Staining and Substance Maps
 See your GC data better! Adds color to gas chromatograms according to their mass spectra (GC Staining). Sorts mass spectra by similarity on a plane (Substance Map).
 
-To work properly, the script needs the FullColorWheel.png in the same folder and a map of mass spectra (a SOM). An extensive generic one can be downloaded at https://doi.org/10.5281/zenodo.13710838
+# Prerequisites
+To work properly, the script needs the **FullColorWheel.png** in the same folder and **a map of mass spectra** (a SOM). An extensive SOM can be downloaded at https://doi.org/10.5281/zenodo.13710838. It is built from spectra available from the MassBank of North America (Mona, used under a CC-BY 4.0 license, https://mona.fiehnlab.ucdavis.edu) and covers a wide range of typical GC analytes.
 
 Gas chromatograms with mass spectra must be saved as text before they can be processed by the script. We use OpenChrom to do this - https://www.openchrom.net/ 
 
-The expected structure of the csv with GC data is:
+The **expected structure** of the csv with GC data is:
 
 		RT(milliseconds),RT(minutes),Retention Index (not used),m/z of detected masses (integer)
 
@@ -29,8 +30,8 @@ For example, the first lines of an GC input might look like this (Openchrom adds
 
 
 
-Version Info
-------------
+# Version Info
+  
 The script file is written on python 3.9.13
 
 It uses following modules (tested on 05/09/2024):
@@ -53,15 +54,21 @@ It uses following modules (tested on 05/09/2024):
 
 - time
 
+# What we are dreaming of
 
-Future work should aim at speed. We are chemists and did our best - still this is a slow script. And it needs a lot of memory.
+Speed. We are chemists and did our best - still this is a slow script. And it needs a lot of memory.
 
-Batch processing and starting it after a chromatographic run would be very useful additions. And reading native files from GC manufacturers.
+Batch processing and preparing the stain and map automatically right after an analysis is finished
+
+Reading native files from GC manufacturers
+
+Defining GC staining recipes for the first stain
+
+Open output files to plot and continue working with them
 
 
 
-Main Code - What does it do?
-----------------------------
+# Main Code - What does it do?
 
 The way it works is by first taking the raw data from a GC-MS, those need to be in a *.csv format saved from Openchrom.  The user has the option to choose between a few parameters:
 
@@ -165,8 +172,8 @@ Last part of the main function of the code is the plotting of the graphs.  First
 measured retention times is colored.  Secondly the BMU map, which is just the BMU coordinates on the xy plane.  An image of RGB plane is set as background to easily correlate each 
 point to the color of the peak.
 
-Staining Recipes
-----------------
+## Staining Recipes
+
 
 The user is asked if wished to continue on staining recipes, meaning analyzing only a small segment of the BMU map.
 
