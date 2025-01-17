@@ -3,6 +3,8 @@ See your GC data better! Adds color to gas chromatograms according to their mass
 
 Please remember to cite our publication if you use staining or substance maps in a scientific paper! The DOI is **10.1016/j.talanta.2025.127541** and the paper is here (Open Access): https://www.sciencedirect.com/science/article/pii/S003991402500027X?via%3Dihub
 
+![A chromatogram with staining stripes, a substance map, a quantitative substance map](/ExampleFiles/GC Staining.png?raw=true "Optional Title")
+
 # Prerequisites
 To work properly, the script needs the **FullColorWheel.png** in the same folder and **a map of mass spectra** (a SOM). An extensive SOM can be downloaded at https://doi.org/10.5281/zenodo.13710838. It is built from spectra available from the MassBank of North America (Mona, used under a CC-BY 4.0 license, https://mona.fiehnlab.ucdavis.edu) and covers a wide range of typical GC analytes.
 
