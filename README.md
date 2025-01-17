@@ -1,5 +1,6 @@
 # GC Staining and Substance Maps
 See your GC data better! Adds color to gas chromatograms according to their mass spectra (GC Staining). Sorts mass spectra by similarity on a plane (Substance Map).
+
 Please remember to cite our publication if you use staining or substance maps in a scientific paper! The DOI is 10.1016/j.talanta.2025.127541 and the paper is here (Open Access): https://www.sciencedirect.com/science/article/pii/S003991402500027X?via%3Dihub
 
 # Prerequisites
