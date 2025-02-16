@@ -5,6 +5,8 @@ Please remember to cite our publication if you use staining or substance maps in
 
 ![A chromatogram with staining stripes, a substance map, a quantitative substance map](/ExampleFiles/GCStaining.png?raw=true "Optional Title")
 
+If you prefer Octave over Python, take a look at the Octave version. It also offer more options, restaing and uses less RAM! https://github.com/boehmdos/GC-Staining-Octave/
+
 # Prerequisites
 To work properly, the script needs the **FullColorWheel.png** in the same folder and **a map of mass spectra** (a SOM). An extensive SOM can be downloaded at https://doi.org/10.5281/zenodo.13710838. It is built from spectra available from the MassBank of North America (Mona, used under a CC-BY 4.0 license, https://mona.fiehnlab.ucdavis.edu) and covers a wide range of typical GC analytes.
 
